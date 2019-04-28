@@ -11,6 +11,10 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'AppController@login');
+
+Route::get('/form/create/project', 'AppController@create');
+Route::get('/form/load/project', 'AppController@load');
+Route::get('/form/load/pm-tools', 'AppController@loadPMTools');
+Route::post('/app/action/create', 'AppController@processProjectCreationRequest');
+Route::post('/process/form/login', 'AppController@processFormLogin');
