@@ -1,7 +1,7 @@
 # Project 4
 + By: Christopher Sheppard
 + Production URL: <http://p4.sheppify.me>
-+ Local URL: <http://project-4.loc>
++ Local URL: <http://p4.loc>
 
 ## Outside resources
 + Bootstrap 4.3.1 (CSS): <https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css>
