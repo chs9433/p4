@@ -96,4 +96,10 @@ class PracticeController extends Controller
        $results= Book::where('author','LIKE','%Rowling%')->delete();
        dump($results);
    }
+   public function practice8()
+   {
+       $book = Book::where('author', '=', 'Dr. Seuss')->get();
+       $book->delete();
+       dump('Book deleted.');   
+   }
 }
