@@ -39,8 +39,8 @@ public function processFormLogin(REQUEST $request,$title='vAudit',$alert=NULL)
     $user['fname']='Christopher';
     $user['lname']='Sheppard';
     #Validate Data
-    $alert=json_encode($arr,JSON_PRETTY_PRINT);
-    return view('layouts.main.index')->with(['title'=>$title,'alert'=>$alert, 'user'=>$user]);
+    $alert=json_encode($user,JSON_PRETTY_PRINT);
+    return redirect('index')->with(['title'=>$title,'alert'=>$alert, 'user'=>$user]);
 }
 
 public function processProjectCreationRequest(REQUEST $request,$title='vAudit',$alert=NULL)

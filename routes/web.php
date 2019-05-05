@@ -13,17 +13,17 @@
 /*
  * Misc "static" pages
  */
-Route::view('/', 'welcome');
+//Route::view('/','welcome');
+Route::get('/', 'AppController@login');
 Route::view('/about', 'about');
 Route::view('/contact', 'contact');
-
-Route::get('/', 'AppController@login');
-
+Route::post('AppController@processFormLogin', 'AppController@processFormLogin');
+//Route::post('/process/form/login', 'AppController@processFormLogin');
 Route::get('/form/create/project', 'AppController@create');
 Route::get('/form/load/project', 'AppController@load');
 Route::get('/form/load/pm-tools', 'AppController@loadPMTools');
 Route::post('/app/action/create', 'AppController@processProjectCreationRequest');
-Route::post('/process/form/login', 'AppController@processFormLogin');
+
 /*
  * Books
  */
@@ -35,7 +35,6 @@ Route::get('/books/search', 'BookController@search');
 
 # Processing the search form
 Route::get('/books/search-process', 'BookController@searchProcess');
-
 Route::get('/books', 'BookController@index');
 Route::get('/books/{id}', 'BookController@show');
 
@@ -52,14 +51,10 @@ Route::get('/books/{id}/delete', 'BookController@delete');
 
 # Process the deletion of a book
 Route::delete('/books/{id}', 'BookController@destroy');
-
-
 /**
  * Practice
  */
 Route::any('/practice/{n?}', 'PracticeController@index');
-
-
 # Example routes from the discussion of P3 development (Week 6, Part 8 video)
 //Route::get('/', 'TriviaController@index');
 //Route::get('/check-answer', 'TriviaController@checkAnswer');
