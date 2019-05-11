@@ -16,7 +16,7 @@
     <form class="form-signin" id="formLogin" name="formLogin" method="POST" action="{{ action('AppController@processFormLogin') }}">
         {{ csrf_field() }}
       <div class="text-center mb-2">
-        <img class="mb-4" src="/images/app-icons/vAudit-Logo-Text.png" alt="" width="250" height="200" />
+        <img class="mb-4" src="/images/app-icons/vAudit-Logo-Text.png" alt="" width="200" height="160" />
 
       </div>
 

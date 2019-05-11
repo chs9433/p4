@@ -40,7 +40,7 @@ public function processFormLogin(REQUEST $request,$title='vAudit',$alert=NULL)
     $user['lname']='Sheppard';
     #Validate Data
     $alert=json_encode($user,JSON_PRETTY_PRINT);
-    return redirect('index')->with(['title'=>$title,'alert'=>$alert, 'user'=>$user]);
+    return view('/index')->with(['title'=>$title,'alert'=>$alert, 'user'=>$user]);
 }
 
 public function processProjectCreationRequest(REQUEST $request,$title='vAudit',$alert=NULL)
