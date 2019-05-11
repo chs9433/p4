@@ -2,9 +2,10 @@
 
 @section('content')
 <div class="container-fluid text-center">
+    <div class="container-fluid text-center"><h1>vAudit</h1></div>
 <br>
-    <h2>Hello, User!</h2>
-    <h5>{{ date('m-d-Y')}}</h5>
+    <h1>Hello, User!</h1>
+    <h4>{{ date('m-d-Y')}}</h4>
     <hr>
     <div class="container button-group">
         <div class="row va-menu-row">

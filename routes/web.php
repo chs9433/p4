@@ -14,9 +14,10 @@
  * Misc "static" pages
  */
 //Route::view('/','welcome');
-Route::get('/', 'AppController@login');
+Route::view('/', 'welcome');
 Route::view('/about', 'about');
 Route::view('/contact', 'contact');
+Route::get('/login', 'AppController@login');
 Route::post('AppController@processFormLogin', 'AppController@processFormLogin');
 //Route::post('/process/form/login', 'AppController@processFormLogin');
 Route::get('/form/create/project', 'AppController@create');
