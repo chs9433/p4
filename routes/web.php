@@ -13,14 +13,26 @@
 /*
  * Misc "static" pages
  */
-//Route::view('/','welcome');
 Route::view('/', 'welcome');
 Route::view('/about', 'about');
 Route::view('/contact', 'contact');
 Route::view('/login', 'login');
+Route::view('/index', 'index');
+Route::view('/resources', 'resources');
+Route::view('/calendar', 'calendar');
+Route::view('/analytics', 'analytics');
+Route::view('/tools', 'tools');
+Route::view('/practice', 'practice');
+Route::view('/forms/create/audit', 'forms.create.audit');
+Route::view('/forms/load/audit', 'forms.load.audit');
+Route::view('/forms/load/checklist', 'forms.load.checklist');
+Route::get('/index', 'AppController@index');
+Route::get('/login', 'AppController@login');
 Route::get('/login', 'AppController@login');
 Route::post('/login', 'AppController@processFormLogin');
-Route::get('/index', 'AppController@index');
+Route::post('/login', 'AppController@processFormLogin');
+Route::post('/login', 'AppController@processFormLogin');
+Route::post('/login', 'AppController@processFormLogin');
 //Route::post('/process/form/login', 'AppController@processFormLogin');
 Route::get('/form/create/project', 'AppController@create');
 Route::get('/form/load/project', 'AppController@load');

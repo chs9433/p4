@@ -3,6 +3,6 @@
 @section('content')
 <div class="container-fluid text-center" style="margin:auto;">
     <br><br>
-    <h4>Contact</h4>
+    <h4>Load Audit</h4>
 </div>
 @endsection
