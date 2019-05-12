@@ -1,8 +1,10 @@
 .va-menu-row
 {
-    height: 500px;
-    width:100%;
-
+    min-height:20%;
+    max-height: 20%;
+    min-width:100%;
+    max-width:100%;
+    margin:auto;
 }
 .va-menu-bttn
 {
@@ -22,4 +24,10 @@
 .va-form-button
 {
     float:right;
+    right:0;
+}
+.va-info-icon {
+    color:blue;
+    margin:auto;
+    padding-left:5px;
 }
