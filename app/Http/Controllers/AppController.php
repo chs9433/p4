@@ -16,7 +16,7 @@ public function login($title='vAudit',$alert=NULL)
 }
 public function index($title='vAudit',$alert=NULL)
 {
-    return view('welcome')->with(['title'=>$title,'alert'=>$alert]);
+    return view('index')->with(['title'=>$title,'alert'=>$alert]);
 }
 public function create($title='vAudit')
 {

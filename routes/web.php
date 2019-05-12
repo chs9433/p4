@@ -17,8 +17,10 @@
 Route::view('/', 'welcome');
 Route::view('/about', 'about');
 Route::view('/contact', 'contact');
+Route::view('/login', 'login');
 Route::get('/login', 'AppController@login');
-Route::post('AppController@processFormLogin', 'AppController@processFormLogin');
+Route::post('/login', 'AppController@processFormLogin');
+Route::get('/index', 'AppController@index');
 //Route::post('/process/form/login', 'AppController@processFormLogin');
 Route::get('/form/create/project', 'AppController@create');
 Route::get('/form/load/project', 'AppController@load');

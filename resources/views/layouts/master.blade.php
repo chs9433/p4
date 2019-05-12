@@ -13,16 +13,15 @@
 </head>
 <body>
     <header>
-      <div class="navbar navbar-dark bg-dark box-shadow">
-        <div class="container-fluid d-flex justify-content-between">
-          <a href="#" class="navbar-brand d-flex align-items-center" style="margin:auto 0; padding:2px;">
-            <i class="fas fa-project-diagram" style="margin:auto;margin-right:5px;"></i>
-            <h5><strong>vAudit</strong></h5>
-          </a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span>
+      <div class="navbar navbar-dark bg-dark box-shadow" style="margin:0;padding:2px;">
+        <div class="container-fluid d-flex justify-content-between" >
+          <a href="{{ url('/index')}}" class="navbar-brand d-flex align-items-left" style="margin:0; padding:1px;align:left;float:left;left:0; vertical-align:middle;">
+            <b>vAudit</b>
+            </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation" style="margin:0;right:-5px;padding:0;"><span class="navbar-toggler-icon"></span>
           </button>
-        </div>
       </div>
+  </div>
     </header>
 
 
@@ -34,32 +33,9 @@
     @yield('alerts')
 </section>
 
-<nav class="navbar fixed-bottom navbar-expand-sm navbar-dark bg-dark">
-  <a class="navbar-brand" href="#">Bottom navbar</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarCollapse">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#">Disabled</a>
-      </li>
-      <li class="nav-item dropup">
-        <a class="nav-link dropdown-toggle" href="https://getbootstrap.com/" id="dropdown10" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropup</a>
-        <div class="dropdown-menu" aria-labelledby="dropdown10">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <a class="dropdown-item" href="#">Something else here</a>
-        </div>
-      </li>
-    </ul>
-  </div>
+<nav class="navbar fixed-bottom navbar-expand-sm navbar-dark bg-dark text-light" style="margin:auto;padding:0px;vertical-align:middle;">
+  <a class="navbar-brand" href="{{ url('/index')}}" style="float:left;"><i class="fas fa-home"></i></a>
+  <div style="margin:0;padding-right:2px;float:right;align:right;">&copy {{ date('Y')}} | HQNRC</div>
 </nav>
 
 {{-- Javascript Libraries --}}
