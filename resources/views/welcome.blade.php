@@ -17,7 +17,7 @@
                 </div>
             </div>
         </div>
-        <div class="row text-center" style="vertical-align:middle;position:fixed;top:45%;width:100%;height:50%;margin:auto;">
+        <div class="row text-center" style="vertical-align:middle;position:fixed;top:40%;width:100%;height:50%;margin:auto;">
             <div class="col-sm-12 col-md-12">
                 <div id="carouselExampleIndicators" class="carousel slide va-carousel" data-ride="carousel" >
                     <div class="carousel-inner" >
