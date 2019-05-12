@@ -19,15 +19,15 @@
 
 
   <link crossorigin="anonymous" media="all" integrity="sha512-iwkZZWcsyMNnn/6c9v2ab3e7h4ZiFTOEZ9R6jj75bN9JzYuYjQ/AC7ufEcfpqd4GcTwcM+p2OhPzRSyeKL7NMQ==" rel="stylesheet" href="https://github.githubassets.com/assets/frameworks-f331a618befc2bf99be870c538f9ac95.css" />
-  
+
     <link crossorigin="anonymous" media="all" integrity="sha512-7xMIa/sc0b/JOK9wvEgKXxcxFgWk2iqJgQOWB4tqu1N+35igEY2AHI0le6Xg+d3e1d7aGtPfsBJV0qzBgpWeYA==" rel="stylesheet" href="https://github.githubassets.com/assets/github-d77687b19cac549d2cbe4c45e71e955a.css" />
-    
-    
-    
-    
+
+
+
+
 
   <meta name="viewport" content="width=device-width">
-  
+
   <title>foobooks/contact.blade.php at master · susanBuck/foobooks</title>
     <meta name="description" content="Contribute to susanBuck/foobooks development by creating an account on GitHub.">
     <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="GitHub">
@@ -44,7 +44,7 @@
   <meta name="request-id" content="D5C2:54FF:882F8C:ED5E40:5CC8EEBC" data-pjax-transient>
 
 
-  
+
 
   <meta name="selected-link" value="repo_source" data-pjax-transient>
 
@@ -65,7 +65,7 @@
 
 
 
-  
+
 
       <meta name="hostname" content="github.com">
     <meta name="user-login" content="chs9433">
@@ -78,7 +78,7 @@
   <meta name="html-safe-nonce" content="4cc3b11aeba792966b0af935596397d6a2ec5632">
 
   <meta http-equiv="x-pjax-version" content="89b1d5ac2ddb12695ed56c858cff7848">
-  
+
 
       <link href="https://github.com/susanBuck/foobooks/commits/master.atom" rel="alternate" title="Recent Commits to foobooks:master" type="application/atom+xml">
 
@@ -109,15 +109,15 @@
   </head>
 
   <body class="logged-in env-production emoji-size-boost page-responsive min-width-0 page-blob">
-    
+
 
   <div class="position-relative js-header-wrapper ">
     <a href="#start-of-content" tabindex="1" class="p-3 bg-blue text-white show-on-focus js-skip-to-content">Skip to content</a>
     <div id="js-pjax-loader-bar" class="pjax-loader-bar"><div class="progress"></div></div>
 
-    
-    
-    
+
+
+
 
 
           <header class="Header js-details-container Details flex-wrap flex-lg-nowrap p-responsive" role="banner">
@@ -166,9 +166,9 @@
             <img src="https://github.githubassets.com/images/search-key-slash.svg" alt="" class="mr-2 header-search-key-slash">
 
             <div class="Box position-absolute overflow-hidden d-none jump-to-suggestions js-jump-to-suggestions-container">
-              
+
 <ul class="d-none js-jump-to-suggestions-template-container">
-  
+
 
 <li class="d-flex flex-justify-start flex-items-center p-0 f5 navigation-item js-navigation-item js-jump-to-suggestion" role="option">
   <a tabindex="-1" class="no-underline d-flex flex-auto flex-items-center jump-to-suggestions-path js-jump-to-suggestion-path js-navigation-open p-2" href="">
@@ -209,7 +209,7 @@
 </ul>
 
 <ul id="jump-to-results" role="listbox" class="p-0 m-0 js-navigation-container jump-to-suggestions-results-container js-jump-to-suggestions-results-container">
-  
+
 
 <li class="d-flex flex-justify-start flex-items-center p-0 f5 navigation-item js-navigation-item js-jump-to-scoped-search d-none" role="option">
   <a tabindex="-1" class="no-underline d-flex flex-auto flex-items-center jump-to-suggestions-path js-jump-to-suggestion-path js-navigation-open p-2" href="">
@@ -241,7 +241,7 @@
   </a>
 </li>
 
-  
+
 
 <li class="d-flex flex-justify-start flex-items-center p-0 f5 navigation-item js-navigation-item js-jump-to-global-search d-none" role="option">
   <a tabindex="-1" class="no-underline d-flex flex-auto flex-items-center jump-to-suggestions-path js-jump-to-suggestion-path js-navigation-open p-2" href="">
@@ -297,7 +297,7 @@
 </a>
     <a class="js-selected-navigation-item Header-link  mr-0 mr-lg-3 py-2 py-lg-0 border-top border-lg-top-0 border-white-fade-15" data-ga-click="Header, click, Nav menu - item:marketplace context:user" data-octo-click="marketplace_click" data-octo-dimensions="location:nav_bar" data-selected-links=" /marketplace" href="/marketplace">
       Marketplace
-</a>      
+</a>
 
   <a class="js-selected-navigation-item Header-link  mr-0 mr-lg-3 py-2 py-lg-0 border-top border-lg-top-0 border-white-fade-15" data-ga-click="Header, click, Nav menu - item:explore" data-selected-links="/explore /trending /trending/developers /integrations /integrations/feature/code /integrations/feature/collaborate /integrations/feature/ship showcases showcases_search showcases_landing /explore" href="/explore">
     Explore
@@ -326,12 +326,12 @@
     </div>
 
     <div class="Header-item position-relative d-none d-lg-flex">
-      
+
 
     </div>
 
     <div class="Header-item mr-0 mr-lg-3 flex-order-1 flex-lg-order-none">
-      
+
     <a aria-label="You have no unread notifications" class="Header-link notification-indicator position-relative tooltipped tooltipped-s js-socket-channel js-notification-indicator" data-hotkey="g n" data-ga-click="Header, go to notifications, icon:read" data-channel="notification-changed:47285090" href="/notifications">
         <span class="mail-status "></span>
         <svg class="octicon octicon-bell" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 12v1H0v-1l.73-.58c.77-.77.81-2.55 1.19-4.42C2.69 3.23 6 2 6 2c0-.55.45-1 1-1s1 .45 1 1c0 0 3.39 1.23 4.16 5 .38 1.88.42 3.66 1.19 4.42l.66.58H14zm-7 4c1.11 0 2-.89 2-2H5c0 1.11.89 2 2 2z"/></svg>
@@ -347,7 +347,7 @@
     <svg class="octicon octicon-plus" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 9H7v5H5V9H0V7h5V2h2v5h5v2z"/></svg> <span class="dropdown-caret"></span>
   </summary>
   <details-menu class="dropdown-menu dropdown-menu-sw">
-    
+
 <a role="menuitem" class="dropdown-item" href="/new" data-ga-click="Header, create new repository">
   New repository
 </a>
@@ -380,7 +380,7 @@
     </div>
 
     <div class="Header-item position-relative mr-0 d-none d-lg-flex">
-      
+
 <details class="details-overlay details-reset">
   <summary class="Header-link"
     aria-label="View profile and more"
@@ -393,7 +393,7 @@
     <div role="none" class="dropdown-divider"></div>
 
       <div class="pl-3 pr-5 f6 user-status-container js-user-status-context pb-1" data-url="/users/status?compact=1&amp;link_mentions=0&amp;truncate=1">
-        
+
 <div class="js-user-status-container
     user-status-compact rounded-1 px-2 py-1 mt-2
     border
@@ -414,9 +414,9 @@
         </div>
         <div class="
           d-inline-block v-align-middle
-          
-          
-           css-truncate css-truncate-target 
+
+
+           css-truncate css-truncate-target
            user-status-message-wrapper f6"
            style="line-height: 20px;" >
           <div class="d-inline-block text-gray-dark v-align-text-top">
@@ -513,7 +513,7 @@
               </div>
             </div>
           </div>
-            
+
 
 <div class="d-inline-block f5 mr-2 pt-3 pb-2" >
   <div class="d-inline-block mr-1">
@@ -596,7 +596,7 @@
     <a role="menuitem" class="dropdown-item" href="https://help.github.com" data-ga-click="Header, go to help, text:help">Help</a>
     <a role="menuitem" class="dropdown-item" href="/settings/profile" data-ga-click="Header, go to settings, icon:settings">Settings</a>
     <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="logout-form" action="/logout" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="ZHXE6jmTHPEr1s0AjSTCrIHZIwCu0utC+WBHHVgSPGtG9QPGsi//ZN1RDOLfbJlyS6up00eaqyuVay7HFAyr8g==" />
-      
+
       <button type="submit" class="dropdown-item dropdown-signout" data-ga-click="Header, sign out, icon:logout" role="menuitem">
         Sign out
       </button>
@@ -607,7 +607,7 @@
 
   </header>
 
-      
+
 
   </div>
 
@@ -623,10 +623,10 @@
   <div class="application-main " data-commit-hovercards-enabled>
         <div itemscope itemtype="http://schema.org/SoftwareSourceCode" class="">
     <main  >
-      
 
 
-  
+
+
 
 
 
@@ -641,7 +641,7 @@
 
 
   <li>
-    
+
     <!-- '"` --><!-- </textarea></xmp> --></option></form><form data-remote="true" class="clearfix js-social-form js-social-container" action="/notifications/subscribe" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="C6k/ooo3cPZI/wFw1I/YcdGAtaYN6U/79Osq/rgn1X7qXIwAHlzBDE7BLLw+6nr6YV4SfX7ml7hmVqX6adTLsw==" />      <input type="hidden" name="repository_id" value="172797799">
 
       <details class="details-reset details-overlay select-menu float-left">
@@ -754,12 +754,12 @@
   <span class="author" itemprop="author"><a class="url fn" rel="author" data-hovercard-type="user" data-hovercard-url="/hovercards?user_id=237711" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/susanBuck">susanBuck</a></span><!--
 --><span class="path-divider">/</span><!--
 --><strong itemprop="name"><a data-pjax="#js-repo-pjax-container" href="/susanBuck/foobooks">foobooks</a></strong>
-  
+
 
 </h1>
 
     </div>
-    
+
 <nav class="reponav js-repo-nav js-sidenav-container-pjax container-lg p-responsive d-none d-lg-block"
      itemscope
      itemtype="http://schema.org/BreadcrumbList"
@@ -863,24 +863,24 @@
 <div class="container-lg new-discussion-timeline experiment-repo-nav  p-responsive">
   <div class="repository-content ">
 
-    
-    
 
 
 
-  
+
+
+
     <a class="d-none js-permalink-shortcut" data-hotkey="y" href="/susanBuck/foobooks/blob/db7896562f01fe8ee6dfe65f9b9703ddabddf7c1/resources/views/contact.blade.php">Permalink</a>
 
     <!-- blob contrib key: blob_contributors:v21:83d483415758ca6c805d4d667cd74fec -->
-      
+
 
     <div class="d-flex flex-items-start mb-3 flex-column flex-md-row">
       <span class="d-flex flex-justify-between width-full width-md-auto">
-        
+
 <details class="details-reset details-overlay select-menu branch-select-menu  hx_rsm" id="branch-select-menu">
   <summary class="btn btn-sm select-menu-button css-truncate"
            data-hotkey="w"
-           
+
            title="Switch branches or tags">
     <i>Branch:</i>
     <span class="css-truncate-target">master</span>
@@ -940,7 +940,7 @@
 
 
     <div class="Box mt-3 position-relative">
-      
+
 <div class="Box-header py-2 d-flex flex-column flex-shrink-0 flex-md-row flex-md-items-center">
 
   <div class="text-mono f6 flex-auto pr-3 flex-order-2 flex-md-order-1 mt-2 mt-md-0">
@@ -981,10 +981,10 @@
   </div>
 </div>
 
-      
+
 
   <div itemprop="text" class="Box-body p-0 blob-wrapper data type-blade ">
-      
+
 <table class="highlight tab-size js-file-line-container" data-tab-size="4">
       <tr>
         <td id="L1" class="blob-num js-line-number" data-line-number="1"></td>
@@ -1039,7 +1039,7 @@
 
     </div>
 
-  
+
 
   <details class="details-reset details-overlay details-overlay-dark">
     <summary data-hotkey="l" aria-label="Jump to line"></summary>
@@ -1058,11 +1058,11 @@
 
     </main>
   </div>
-  
+
 
   </div>
 
-        
+
 <div class="footer container-lg width-full p-responsive" role="contentinfo">
   <div class="position-relative d-flex flex-row-reverse flex-lg-row flex-wrap flex-lg-nowrap flex-justify-center flex-lg-justify-between pt-6 pb-2 mt-6 f6 text-gray border-top border-gray-light ">
     <ul class="list-style-none d-flex flex-wrap col-12 col-lg-5 flex-justify-center flex-lg-justify-between mb-2 mb-lg-0">
@@ -1103,13 +1103,13 @@
   </div>
 
 
-    
+
     <script crossorigin="anonymous" integrity="sha512-ZtnaaB5x5AdFCSiio1TygS5Tz4kQCKGKIgZHPh78z2xfH5Gn2oRt8J6M2bvmDrOl0rtKLzuwA7OWr8teo5bLNQ==" type="application/javascript" src="https://github.githubassets.com/assets/frameworks-a4a2ae1b.js"></script>
-    
+
     <script crossorigin="anonymous" async="async" integrity="sha512-Mb/utygfaDYEXHVcIQ09zQZszwcJwhMS6+1YzExWWhWEOlLQkU/vYngRo865s9eBXydQkx6l2AymbTKZKwkCHg==" type="application/javascript" src="https://github.githubassets.com/assets/github-bootstrap-69aadc18.js"></script>
-    
-    
-    
+
+
+
   <div class="js-stale-session-flash stale-session-flash flash flash-warn flash-banner" hidden
     >
     <svg class="octicon octicon-alert" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"/></svg>
@@ -1137,4 +1137,3 @@
 
   </body>
 </html>
-

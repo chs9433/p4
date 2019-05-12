@@ -17,7 +17,6 @@
         {{ csrf_field() }}
       <div class="text-center mb-2">
         <img class="mb-4" src="/images/app-icons/vAudit-Logo-Text.png" alt="" width="200" height="160" />
-
       </div>
 
       <div class="form-label-group mb-2">
@@ -30,7 +29,8 @@
         <label for="password">Password</label>
       </div>
 
-      <button class="btn btn-lg btn-danger btn-block" type="submit">Sign In</button>
+      <button class="btn btn-lg btn-danger btn-block" type="submit">Sign In <i class="fas fa-sign-in-alt"></i></button>
+      <p class="text-center"><a href="#">Forgot Password?</a></p>
       <p class="mt-5 mb-3 text-muted text-center">&copy; {{ date('Y'). ' Verizon'}}</p>
     </form>
 </div>
