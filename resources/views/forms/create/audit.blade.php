@@ -27,7 +27,6 @@
 <input type="date" class="form-control" id="endDate" name="endDate">
 </div>
 </div>
-
 <div class="form-group row">
     <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 mb-3" style="max-width:50%;">
         <label class="form-label va-form-label" for="leadAuditor">Lead Auditor<sup class="va-info-icon"><i class="fas fa-info-circle"></i></sup></label>

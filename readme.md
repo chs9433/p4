@@ -19,7 +19,19 @@
 +   phpoffice/common
 +   adldap2/adldap2-laravel
 +   dompdf/dompdf
-
++   fullcalendar/fullcalendar
++   consoletvs/charts
++   mobiledetect/mobiledetectlib
++   composer require twbs/bootstrap
++   nolimits4web/swiper
++   jeroendesloovere/vcard
++   nicat/static-map
++   softon/sweetalert
++   datatables/datatables
++   barryvdh/laravel-dompdf
++   adldap2/adldap2-laravel
++   geocoder-php/mapquest-provider
++   toin0u/geotools-laravel
 ## Code style divergences
 None
 

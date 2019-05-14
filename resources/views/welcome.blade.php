@@ -57,7 +57,7 @@
             <div class="col-sm-12 col-md-12" style="vertical-align:middle;">
                 <a href="/login">
                 <button class="btn btn-danger btn-block" type="button" href="/login" style="border:2px solid black;vertical-align:middle;color:white;font-weight:bold;">
-                    Log In <i class="fas fa-sign-in-alt"></i>
+                    Start <i class="fas fa-sign-in-alt"></i>
                 </button>
             </a>
             </div>

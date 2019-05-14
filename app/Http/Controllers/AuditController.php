@@ -44,8 +44,9 @@ class AuditController extends Controller
     public function load($title='vAudit',$alert=NULL,Request $request)
     {
         $audit = new Audit();
-        $audits = $audit->get();
-
+        $auditID=$request['auditID'];
+        $auditData = Audit::where('id','=',$auditID)->get()->toArray();
+        return view('dashboard')->with(['title'=>$title,'auditData'=>$auditData[0]]);
     }
     public function update($title='vAudit',$alert=NULL,Request $request)
     {
