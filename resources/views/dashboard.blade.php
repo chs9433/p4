@@ -3,7 +3,7 @@
 @section('content')
 <div class="container-fluid text-center" style="margin:auto;">
 <br>
-<h4>Audit Dashboard: {{$auditData['submarket']}}</h4>
+<h4>{{$auditData['submarket']}}</h4>
 <small><b>Start Date:</b> {{ $auditData['audit_start']}} | <b>End Date:</b> {{ $auditData['audit_end']}}</small>
 <hr>
 <div class="container text-left">

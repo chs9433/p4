@@ -1,3 +1,24 @@
+.va-nav-top
+{
+    background-color:gray;
+    margin:0;
+    padding:2px;
+}
+.va-nav-bottom
+{
+    border-top:5px solid black;
+    background-color:#D52B1E;
+    margin:auto;
+    padding:0px;
+    vertical-align:middle;
+}
+.va-nav-bottom-menu-button{
+  float: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 .va-menu-row
 {
     min-height:20%;
