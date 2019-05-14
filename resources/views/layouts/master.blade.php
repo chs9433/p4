@@ -14,7 +14,7 @@
 </head>
 <body>
     <header>
-      <div class="navbar navbar-dark bg-dark box-shadow" style="margin:0;padding:2px;">
+      <div class="navbar navbar-dark box-shadow" style="background-color:gray;margin:0;padding:2px;">
         <div class="container-fluid d-flex justify-content-between" >
           <a href="{{ url('/index')}}" class="navbar-brand d-flex align-items-left" style="margin:0; padding:1px;align:left;float:left;left:0; vertical-align:middle;">
             <b>vAudit</b>
@@ -33,7 +33,7 @@
     @yield('alerts')
 </section>
 
-<nav class="navbar fixed-bottom navbar-expand-sm navbar-dark bg-dark text-light" style="margin:auto;padding:0px;vertical-align:middle;">
+<nav class="navbar fixed-bottom navbar-expand-sm text-light" style="background-color:red;margin:auto;padding:0px;vertical-align:middle;">
   <a class="navbar-brand" href="{{ url('/index')}}" style="float:left;"><i class="fas fa-home"></i></a>
   <div style="margin:0;padding-right:2px;float:right;align:right;">&copy {{ date('Y')}} | HQNRC</div>
 </nav>

@@ -32,6 +32,7 @@
 +   adldap2/adldap2-laravel
 +   geocoder-php/mapquest-provider
 +   toin0u/geotools-laravel
+
 ## Code style divergences
 None
 
