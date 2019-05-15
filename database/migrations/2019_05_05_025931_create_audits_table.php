@@ -18,8 +18,12 @@ class CreateAuditsTable extends Migration
             $table->timestamps();
             $table->string('market');
             $table->string('submarket');
-            $table->date('audit_start')->unique();
-            $table->date('audit_end')->unique();
+            $table->date('audit_start_date')->unique();
+            $table->date('audit_end_date')->unique();
+            $table->string('lead_auditor');
+            $table->string('guest_auditor');
+            $table->string('rfe_sme');
+            $table->string('ehs_sme');
             $table->string('audit_status',11);
         });
     }

@@ -46,7 +46,7 @@ class SubmarketsTableSeeder extends Seeder
                 $submarket = new Submarket();
                 $submarket->created_at = Carbon\Carbon::now()->subDays($count)->toDateTimeString();
                 $submarket->updated_at = Carbon\Carbon::now()->subDays($count)->toDateTimeString();
-                $submarket->name = $submarketData[0];
+                $submarket->name = strtoupper($submarketData[0]);
                 $submarket->save();
                 $count--;
             }

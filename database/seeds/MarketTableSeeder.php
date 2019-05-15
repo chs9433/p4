@@ -30,7 +30,7 @@ class MarketTableSeeder extends Seeder
             $market = new Market();
             $market->created_at = Carbon\Carbon::now()->subDays($count)->toDateTimeString();
             $market->updated_at = Carbon\Carbon::now()->subDays($count)->toDateTimeString();
-            $market->name = $marketData[0];
+            $market->name = strtoupper($marketData[0]);
             $market->save();
             $count--;
         }
