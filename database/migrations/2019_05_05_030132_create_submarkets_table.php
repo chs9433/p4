@@ -16,7 +16,7 @@ class CreateSubmarketsTable extends Migration
         Schema::create('submarkets', function (Blueprint $table) {
             $table->bigIncrements('submarket_id');
             $table->timestamps();
-            $table->string('submarket',26)->unique();
+            $table->string('name',26)->unique();
         });
     }
 

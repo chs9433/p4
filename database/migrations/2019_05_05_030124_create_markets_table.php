@@ -16,7 +16,7 @@ class CreateMarketsTable extends Migration
         Schema::create('markets', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->timestamps();
-            $table->string('market',13)->unique();
+            $table->string('name',13)->unique();
         });
     }
 
