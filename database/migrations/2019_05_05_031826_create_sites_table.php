@@ -15,10 +15,8 @@ class CreateSitesTable extends Migration
     {
         Schema::create('sites', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->char('site_meta_unid',32)->unique();;
             $table->timestamps();
-            $table->bigInteger('fk_market_id',13);
-            $table->bigInteger('fk_submarket_id',26);
+            $table->char('site_meta_unid',32);
             $table->string('market',13);
             $table->string('submarket',26);
             $table->string('name');
@@ -31,8 +29,8 @@ class CreateSitesTable extends Migration
             $table->string('site_type');
             $table->string('tower_type');
             $table->string('gate_combo');
-            $table->string('direction');
-            $table->string('restriction');
+            $table->longText('direction');
+            $table->longText('restriction');
             $table->string('gl_location');
             $table->string('asr_number');
             $table->string('vzreg_frn');
@@ -47,7 +45,7 @@ class CreateSitesTable extends Migration
             $table->string('site_tech_email');
             $table->string('site_tech_phone');
             $table->string('site_tech_alt_phone');
-            $table->string('site_attachments');
+            $table->longText('site_attachments');
         });
     }
 

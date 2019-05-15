@@ -24,6 +24,7 @@ Route::view('/analytics', 'analytics');
 Route::view('/tools', 'tools');
 Route::view('/practice', 'practice');
 Route::view('/dashboard', 'dashboard');
+Route::view('/checklist', 'checklist');
 Route::view('/forms/create/audit', 'forms.create.audit');
 Route::view('/forms/load/audit', 'forms.load.audit');
 Route::view('/forms/load/checklist', 'forms.load.checklist');
