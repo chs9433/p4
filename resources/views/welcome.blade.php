@@ -9,11 +9,11 @@
     <link href='/css/va-welcome.css' rel='stylesheet'>
 </head>
 <body>
-    <div class="container text-center va-welcome-div" style="margin:0;padding:0;min-height:100%;max-height:100%">
+    <div class="container text-center va-welcome-div m-0 p-0" style="margin:0;padding:0;min-height:100%;max-height:100%">
         <div class="row text-center" style="position:fixed;top:5%;width:100%;padding:0px;margin:auto;overflow:hidden;">
-            <div class="col-sm-12 col-md-12">
-                <div class="container-fluid text-center mb-2">
-                  <img class="mb-4" src="/images/app-icons/vAudit-Logo-Text.png" alt="" style="min-height:100px;max-height:250px;min-width:25%;max-width:55%;"/>
+            <div class="col-xs-12 col-sm-12 col-sm-12 col-md-12">
+                <div class="container text-center mb-2">
+                  <img class="mb-4" src="/images/app-icons/vAudit-Logo-Text.png" alt="" style="min-height:100px;max-height:250px;min-width:25%;max-width:50%;"/>
                 </div>
             </div>
         </div>
@@ -55,7 +55,7 @@
         </div>
         <div class="row text-center" style="vertical-align:middle;width:100%;padding:0px;margin:auto;border-top:1px solid white;border-bottom:1px solid white;color:white;bottom:5%;position:fixed;">
             <div class="col-sm-12 col-md-12" style="vertical-align:middle;">
-                <form method="GET" action="/login">
+                <form method="GET" action="/index">
                     <button class="btn btn-danger btn-block" type="submit">Let's Go</button>
                 </form>
             </div>

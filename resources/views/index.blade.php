@@ -9,13 +9,13 @@
 @endsection
 
 @section('content')
-<div class="container-fluid text-center" style="margin:auto;">
+<div class="container-fluid text-center m-auto">
     <br>
     <h4>Welcome</h4>
     <h5>{{ date('m-d-Y')}}</h5>
     <hr>
         <div class="row va-menu-row">
-            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6" style="min-width:50%;max-width:50%;">
+            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 va-menu-col pb-2">
                 <a href="/forms/create/audit">
                     <button class="btn btn-large btn-danger btn-block" type="button">
                         <i class="fas fa-folder-plus fa-2x"></i>
@@ -23,7 +23,7 @@
                     </button>
                 </a>
             </div>
-            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6" style="min-width:50%;max-width:50%;">
+            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 va-menu-col pb-2">
                 <a href="/forms/load/audit">
                     <button class="btn btn-large btn-danger btn-block" type="button">
                         <i class="fas fa-folder-open fa-2x"></i>
@@ -34,7 +34,7 @@
         </div>
         <hr>
         <div class="row va-menu-row">
-            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6" style="min-width:50%;max-width:50%;">
+            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 va-menu-col pb-2">
                 <a href="/forms/delete/audit">
                     <button class="btn btn-large btn-danger btn-block" type="button">
                         <i class="fas fa-folder-minus fa-2x"></i>

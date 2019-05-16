@@ -23,9 +23,8 @@ class AuditsTableSeeder extends Seeder
 
         foreach ($audits as $key => $auditData)
         {
-            # Find that author in the authors table
+            
             $location_id = Location::where('submarket', '=', strtoupper($auditData[1]))->pluck('id')->first();
-
             $audit = new Audit();
             $audit->created_at = Carbon\Carbon::now()->subDays($count)->toDateTimeString();
             $audit->updated_at = Carbon\Carbon::now()->subDays($count)->toDateTimeString();
