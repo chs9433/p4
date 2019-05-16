@@ -55,9 +55,11 @@
         </div>
         <div class="row text-center" style="vertical-align:middle;width:100%;padding:0px;margin:auto;border-top:1px solid white;border-bottom:1px solid white;color:white;bottom:5%;position:fixed;">
             <div class="col-sm-12 col-md-12" style="vertical-align:middle;">
+                <a href="/login" class="text-light">
                 <button class="btn btn-danger btn-block" type="button"  style="border:2px solid black;vertical-align:middle;color:white;font-weight:bold;">
-                    <a href="/login" class="text-light">Let's Go</a>
+                    Let's Go
                 </button>
+                </a>
             </div>
         </div>
     </div>
