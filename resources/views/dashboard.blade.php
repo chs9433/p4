@@ -14,7 +14,7 @@
 <h4>{{$auditData['submarket']}}</h4>
 <small><b>Start Date:</b> {{ $auditData['audit_start_date']}} | <b>End Date:</b> {{ $auditData['audit_end_date']}}</small>
 <hr>
-<div class="container text-left">
+<div class="container-fluid text-left">
 <h5>Audit Status</h5>
 <div class="row"><div class="col" style="font-size:12px">{{ $auditData['audit_status'] }}</div></div>
 <hr>
@@ -27,9 +27,7 @@
 <h5>Sites</h5>
 <hr>
 <div class="container">
-    @foreach($submarkets as $submarket)
-        <option value='{{ $submarket->submarket }}' {{ (old('submarket') == $submarket->submarket) ? 'selected' : '' }}>{{ $submarket->submarket }}</option>
-    @endforeach
+
 </div>
 <hr>
 </div>

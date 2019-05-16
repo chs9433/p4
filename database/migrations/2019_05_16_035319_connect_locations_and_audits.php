@@ -20,10 +20,10 @@ class ConnectLocationsAndAudits extends Migration
         # $table->dropColumn('author');
 
         # Add a new bigint field called `author_id` that has to be unsigned (i.e. positive)
-        $table->bigInteger('author_id')->unsigned();
+        $table->bigInteger('location_id')->unsigned();
 
         # This field `author_id` is a foreign key that connects to the `id` field in the `authors` table
-        $table->foreign('author_id')->references('id')->on('authors');
+        $table->foreign('location_id')->references('id')->on('locations');
 
     });
     }
@@ -35,6 +35,7 @@ class ConnectLocationsAndAudits extends Migration
      */
     public function down()
     {
-        //
+        $table->dropForeign('audits_location_id_foreign');
+        $table->dropColumn('location_id');
     }
 }

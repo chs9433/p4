@@ -2,6 +2,7 @@
 
 use Illuminate\Database\Seeder;
 use App\Audit;
+use App\Location;
 
 class AuditsTableSeeder extends Seeder
 {
@@ -22,10 +23,14 @@ class AuditsTableSeeder extends Seeder
 
         foreach ($audits as $key => $auditData)
         {
+            # Find that author in the authors table
+            $location_id = Location::where('submarket', '=', strtoupper($auditData[1]))->pluck('id')->first();
+
             $audit = new Audit();
             $audit->created_at = Carbon\Carbon::now()->subDays($count)->toDateTimeString();
             $audit->updated_at = Carbon\Carbon::now()->subDays($count)->toDateTimeString();
             $audit->name='AUDIT-'.strtoupper($auditData[1]).'-'.$auditData[2];
+            $audit->location_id = $location_id;
             $audit->market = strtoupper($auditData[0]);
             $audit->submarket = strtoupper($auditData[1]);
             $audit->audit_start_date = $auditData[2];

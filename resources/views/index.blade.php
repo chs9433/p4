@@ -11,7 +11,7 @@
 @section('content')
 <div class="container-fluid text-center" style="margin:auto;">
     <br>
-    <h4>Hello, there.</h4>
+    <h4>Welcome</h4>
     <h5>{{ date('m-d-Y')}}</h5>
     <hr>
         <div class="row va-menu-row">

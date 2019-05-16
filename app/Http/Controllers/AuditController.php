@@ -27,8 +27,8 @@ class AuditController extends Controller
         $audit->rfe_sme=$request['rfeSME'];
         $audit->ehs_sme=$request['ehsSME'];
         $audit->audit_status='PLAN';
+        $audit->location()->associate($location);
         $audit->save();
-
         $auditData=$audit;
         return view('alerts.create.success')->with(['title'=>$title,'auditData'=>$auditData,'alertReRoute'=>'/index']);
     }
@@ -40,7 +40,6 @@ class AuditController extends Controller
         $auditData = Audit::where('id','=',$auditID)->get()->toArray();
         return view('dashboard')->with(['title'=>$title,'auditData'=>$auditData[0]]);
     }
-
 
     public function delete($title='vAudit',$alert=NULL,Request $request)
     {
