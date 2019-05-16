@@ -21,7 +21,7 @@
 +   barryvdh/laravel-debugbar
 
 ## Code style divergences
-None
++ The 'Welcome' view contains in-line stylings. I created a separate CSS file with classes to style the elements, but for some reason the linked styles were not reflected in this view only. All other views have classes from the same CSS file (per requirements).
 
 ## Notes for instructor
 + Site data is seeded for the 'Tri State' submarket only. If you create and/or load audits for other markets then the 'Site List' section of the dashboard will be empty.
