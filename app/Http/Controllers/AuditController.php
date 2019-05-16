@@ -15,29 +15,17 @@ class AuditController extends Controller
     {
         # Data Validation Rules
         $validationRules=([
-        'submarket' => 'required',
-        'audit_start_date' => 'required',
-        'audit_end_date' => 'required',
-        'lead_auditor' => 'required',
-        'guest_auditor' => 'required',
-        'rfe_sme' => 'required',
-        'ehs_sme' => 'required'
+        'submarket' => 'required|string',
+        'startDate' => 'required|date',
+        'endDate' => 'required|date',
+        'leadAuditor' => 'required|string',
+        'guestAuditor' => 'required|string',
+        'rfeSME' => 'required|string',
+        'ehsSME' => 'required|string'
         ]);
-
-        #Error Messages
-        $errorMessages=([
-        'submarket.required' => 'The \'Submarket\' field is required.',
-        'audit_start_date.required' => 'The \'Audit Start Date\' field is required.',
-        'audit_end_date.required' => 'The \'Audit End Date\' field is required.',
-        'lead_auditor.required' => 'The \'Lead Auditor\' field is required.',
-        'guest_auditor.required' => 'The \'Guest Auditor\' field is required.',
-        'rfe_sme.required' => 'The \'RFE SME\' field is required.',
-        'ehs_sme.reequired' => 'The \'EHS SME\' field is required.'
-        ]);
-
 
         # Make the call to validate inputs
-        $request->validate($validationRules,$errorMessages);
+        $request->validate($validationRules);
 
         #Create Table
         $location = Location::select('id')->where('submarket','=',$request['submarket'])->first();
