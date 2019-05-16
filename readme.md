@@ -14,7 +14,7 @@
 + Users can add/read/delete audits
 + Each audit has a dashboard page which presents a short overview of the audit
 
-  ## Database summary
+## Database summary
 + My application has 4 tables in total (`users`, `audits`, `locations`,`sites`)
 + There's a many-to-many relationship between `sites` and `audits`
 + There's a one-to-many relationship between `locations` and `sites`
