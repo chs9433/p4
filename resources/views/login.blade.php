@@ -28,7 +28,6 @@
         <input type="password" id="password" name="password" class="form-control" required>
         <label for="password">Password</label>
       </div>
-
       <button class="btn btn-lg btn-danger btn-block" type="submit">Sign In <i class="fas fa-sign-in-alt"></i></button>
       <p class="text-center"><a href="#">Forgot Password?</a></p>
       <p class="mt-5 mb-3 text-muted text-center">&copy; {{ date('Y'). ' Verizon'}}</p>
