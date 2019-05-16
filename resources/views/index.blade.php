@@ -1,8 +1,16 @@
 @extends('layouts.master')
 
+@section('viewName')
+<div class="nav-scroller bg-white shadow-sm">
+  <nav class="nav nav-underline">
+    <a class="nav-link active" href="#"><strong><i class="fas fa-sitemap fa-lg"></i> Main Menu</strong></a>
+  </nav>
+</div>
+@endsection
+
 @section('content')
 <div class="container-fluid text-center" style="margin:auto;">
-    <br><br>
+    <br>
     <h4>Hello, there.</h4>
     <h5>{{ date('m-d-Y')}}</h5>
     <hr>
@@ -27,31 +35,14 @@
         <hr>
         <div class="row va-menu-row">
             <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6" style="min-width:50%;max-width:50%;">
-                <a href="/calendar" style="">
-                    <button class="btn btn-large btn-danger btn-block" type="button" style="height:100%;">
-                        <i class="fas fa-calendar-alt fa-2x"></i>
-                        <br>Calendar
+                <a href="/forms/delete/audit">
+                    <button class="btn btn-large btn-danger btn-block" type="button">
+                        <i class="fas fa-folder-minus fa-2x"></i>
+                        <br>Delete Audit
                     </button>
-            </a>
-            </div>
-            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6" style="min-width:50%;max-width:50%;">
-                <a href="/analytics">
-                <button class="btn btn-large btn-danger btn-block" type="button"><i class="fas fa-chart-line fa-2x"></i><br>Analytics</button>
-            </a>
+                </a>
             </div>
         </div>
         <hr>
-        <div class="row va-menu-row">
-            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6" style="min-width:50%;max-width:50%;">
-                <a href="/tools">
-                <button class="btn btn-large btn-danger btn-block" type="button"><i class="fas fa-toolbox fa-2x"></i><br>Audit Tools</button>
-            </a>
-            </div>
-            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6" style="min-width:50%;max-width:50%;">
-                <a href="/resources">
-                <button class="btn btn-large btn-danger btn-block" type="button"><i class="fas fa-atlas fa-2x"></i><br>Resources</button>
-            </a>
-            </div>
-        </div>
 </div></div>
 @endsection

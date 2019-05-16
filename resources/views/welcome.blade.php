@@ -53,32 +53,16 @@
                 </div>
             </div>
         </div>
-        <div class="row text-center" style="vertical-align:middle;width:100%;padding:0px;margin:auto;border-top:1px solid white;border-bottom:1px solid white;color:white;bottom:15%;position:fixed;">
+        <div class="row text-center" style="vertical-align:middle;width:100%;padding:0px;margin:auto;border-top:1px solid white;border-bottom:1px solid white;color:white;bottom:5%;position:fixed;">
             <div class="col-sm-12 col-md-12" style="vertical-align:middle;">
                 <a href="/login">
                 <button class="btn btn-danger btn-block" type="button" href="/login" style="border:2px solid black;vertical-align:middle;color:white;font-weight:bold;">
-                    Start <i class="fas fa-sign-in-alt"></i>
+                    Let's Go
                 </button>
             </a>
-            </div>
-        </div>
-        <div class="row text-center" style="vertical-align:middle;width:100%;padding:0px;margin:auto;border-top:1px solid white;border-bottom:1px solid white;color:white;bottom:5%;position:fixed;">
-            <div class="col-sm-6 col-md-6" style="vertical-align:middle;width:50%">
-                <a href="/about">
-                <button class="btn btn-danger btn-block" type="button" style="border:2px solid black;vertical-align:middle;color:white;font-weight:bold;">
-                    <i class="fas fa-info-circle"></i> About
-                </button>
-            </a>
-            </div>
-            <div class="col-sm-6 col-md-6" style="vertical-align:middle;width:50%">
-                <button class="btn btn-danger btn-block" type="button" href="/login" style="border:2px solid black;vertical-align:middle;color:white;font-weight:bold;">
-                    <i class="fas fa-question-circle"></i> Help
-                </button>
             </div>
         </div>
     </div>
-
-
 
 {{-- Javascript Libraries --}}
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>

@@ -1,11 +1,12 @@
 @extends('layouts.master')
 
 @section('content')
-<div class="container-fluid text-center" style="margin:auto;">
+<div class="container text-center">
     <br><br>
+    <i class="far fa-thumbs-up fa-3x"></i>
     <h4>Success!</h4>
     <hr>
-    <div class="text-left"><b>Here's the data you entered:</b> <br>{{ $formInput }}</div>
+    <div><b>{{ $auditData['name'] }}</b> has been created.</div>
     <hr>
     <a href='{{ $alertReRoute }}'><button type="button" class="btn btn-success" style="float:right;"><i class="fas fa-thumbs-up"></i> OK</button></a>
 </div>

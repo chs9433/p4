@@ -1,21 +1,37 @@
 @extends('layouts.master')
 
+@section('viewName')
+<div class="nav-scroller bg-white shadow-sm">
+  <nav class="nav nav-underline">
+    <a class="nav-link active" href="#"><strong><i class="fas fa-sitemap fa-lg"></i> Audit Dashboard</strong></a>
+  </nav>
+</div>
+@endsection
+
 @section('content')
 <div class="container-fluid text-center" style="margin:auto;">
 <br>
 <h4>{{$auditData['submarket']}}</h4>
-<small><b>Start Date:</b> {{ $auditData['audit_start']}} | <b>End Date:</b> {{ $auditData['audit_end']}}</small>
+<small><b>Start Date:</b> {{ $auditData['audit_start_date']}} | <b>End Date:</b> {{ $auditData['audit_end_date']}}</small>
 <hr>
 <div class="container text-left">
-<h5>Overview</h5>
+<h5>Audit Status</h5>
+<div class="row"><div class="col" style="font-size:12px">{{ $auditData['audit_status'] }}</div></div>
 <hr>
-<h5>Stats</h5>
+<h5>Audit Team</h5>
+<div class="row"><div class="col" style="font-size:12px"><b>Lead Auditor:</b> {{ $auditData['lead_auditor'] }}</div></div>
+<div class="row"><div class="col" style="font-size:12px"><b>Guest Auditor:</b> {{ $auditData['guest_auditor'] }}</div></div>
+<div class="row"><div class="col" style="font-size:12px"><b>RFE SME:</b> {{ $auditData['rfe_sme'] }}</div></div>
+<div class="row"><div class="col" style="font-size:12px"><b>EH&S SME:</b> {{ $auditData['ehs_sme'] }}</div></div>
 <hr>
-{{ print_r($auditData,true) }}
+<h5>Sites</h5>
 <hr>
-<h5>Schedule</h5>
+<div class="container">
+    @foreach($submarkets as $submarket)
+        <option value='{{ $submarket->submarket }}' {{ (old('submarket') == $submarket->submarket) ? 'selected' : '' }}>{{ $submarket->submarket }}</option>
+    @endforeach
+</div>
 <hr>
-<h5>Summary</h5>
 </div>
 <hr>
 </div>

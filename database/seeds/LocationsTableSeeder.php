@@ -1,9 +1,9 @@
 <?php
 
 use Illuminate\Database\Seeder;
-use App\Market;
+use App\Location;
 
-class MarketsTableSeeder extends Seeder
+class LocationsTableSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -12,8 +12,7 @@ class MarketsTableSeeder extends Seeder
      */
     public function run()
     {
-        //
-        $markets=[
+        $locations=[
                     ['Great Lakes','Illinois/Wisconsin','Chicago'],
                     ['Great Lakes','Illinois/Wisconsin','Outer Illinois'],
                     ['Great Lakes','Michigan/Indiana/KY','Indiana'],
@@ -76,18 +75,18 @@ class MarketsTableSeeder extends Seeder
                     ['South East','Virginia','Virginia']
     ];
 
-    $count=count($markets);
+    $count=count($locations);
 
-    foreach ($markets as $key => $marketData)
+    foreach ($locations as $key => $locationData)
     {
-        $market = new Market();
-        $market->created_at = Carbon\Carbon::now()->subDays($count)->toDateTimeString();
-        $market->updated_at = Carbon\Carbon::now()->subDays($count)->toDateTimeString();
-        $market->market = strtoupper($marketData[0]);
-        $market->submarket = strtoupper($marketData[1]);
-        $market->group = strtoupper($marketData[2]);
-        $market->save();
+        $location = new Location();
+        $location->created_at = Carbon\Carbon::now()->subDays($count)->toDateTimeString();
+        $location->updated_at = Carbon\Carbon::now()->subDays($count)->toDateTimeString();
+        $location->market = strtoupper($locationData[0]);
+        $location->submarket = strtoupper($locationData[1]);
+        $location->group = strtoupper($locationData[2]);
+        $location->save();
         $count--;
     }
     }
-}
+    }

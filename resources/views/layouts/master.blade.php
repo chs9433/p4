@@ -14,29 +14,13 @@
 </head>
 <body>
     <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
-      <a class="navbar-brand mr-auto mr-lg-0" href="#">vAudit</a>
-      <a class="nav-link" href="#" style="float:right;mr-10">
-        <i class="fas fa-bell fa-lg" style="color:white"></i>
-        <sup><span class="badge badge-pill bg-light align-text-bottom"><b>4</b></span></sup>
-      </a>
-      <button class="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
-
-      </div>
+      <a class="navbar-brand mr-auto mr-lg-0" href="/">vAudit</a>
+      <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault"></div>
     </nav>
 
-    <div class="nav-scroller bg-white shadow-sm">
-      <nav class="nav nav-underline">
-        <a class="nav-link active" href="#">Audit Dashboard</a>
-        <a class="nav-link" href="#">
-          Overview
-        </a>
-        <a class="nav-link" href="#">Schedule</a>
-      </nav>
-    </div>
+<section>
+@yield('viewName')
+</section>
 
 <section>
     @yield('content')

@@ -27,17 +27,22 @@ Route::view('/dashboard', 'dashboard');
 Route::view('/checklist', 'checklist');
 Route::view('/forms/create/audit', 'forms.create.audit');
 Route::view('/forms/load/audit', 'forms.load.audit');
+Route::view('/forms/delete/audit', 'forms.delete.audit');
+Route::view('/forms/update/audit', 'forms.update.audit');
 Route::view('/forms/load/checklist', 'forms.load.checklist');
 Route::get('/index', 'AppController@index');
 Route::get('/login', 'AppController@login');
-
-
-
-
+Route::get('/forms/create/audit','AppController@create');
+Route::get('/forms/load/audit', 'AppController@load');
+Route::get('/forms/delete/audit', 'AppController@delete');
+Route::get('/forms/update/audit', 'AppController@update');
 Route::post('/login', 'AppController@processFormLogin');
 Route::post('/process/form/create/audit', 'AuditController@create');
-
 Route::post('/process/form/load/audit', 'AuditController@load');
+Route::post('/process/form/delete/audit','AuditController@delete');
+Route::post('/process/form/update/audit','AuditController@update');
+
+
 //Route::post('/process/form/login', 'AppController@processFormLogin');
 Route::get('/form/create/project', 'AppController@create');
 Route::get('/form/load/project', 'AppController@load');

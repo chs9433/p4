@@ -43,9 +43,11 @@ class SubmarketsTableSeeder extends Seeder
 
             foreach ($submarkets as $key => $submarketData)
             {
+                #$market_id=Market::where('')
                 $submarket = new Submarket();
                 $submarket->created_at = Carbon\Carbon::now()->subDays($count)->toDateTimeString();
                 $submarket->updated_at = Carbon\Carbon::now()->subDays($count)->toDateTimeString();
+                #$submarket->market_id=$market_id;
                 $submarket->name = strtoupper($submarketData[0]);
                 $submarket->save();
                 $count--;

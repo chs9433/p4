@@ -5,31 +5,23 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App;
 use App\Audit;
+use App\Location;
 
 class AuditController extends Controller
 {
     //
     public function create($title='vAudit',$alert=NULL,Request $request)
     {
-
-
-        $arrInput=array(
-            $request['submarket'],
-            $request['startDate'],
-            $request['endDate'],
-            $request['leadAuditor'],
-            $request['guestAuditor'],
-            $request['rfeSME'],
-            $request['ehsSME']
-        );
-
-        $audit_id=
         #Create Table
+        $audit_name='AUDIT-'.strtoupper($request['submarket']).'-'.$request['startDate'];
+        $market=Location::select('market')->where('submarket','=',$request['submarket'])->first();
+        $market=$market->market;
         $audit = new Audit();
-        $audit->market='VZW Market';
+        $audit->name=$audit_name;
+        $audit->market=$market;
         $audit->submarket=$request['submarket'];
-        $audit->audit_start=$request['startDate'];
-        $audit->audit_end=$request['endDate'];
+        $audit->audit_start_date=$request['startDate'];
+        $audit->audit_end_date=$request['endDate'];
         $audit->lead_auditor=$request['leadAuditor'];
         $audit->guest_auditor=$request['guestAuditor'];
         $audit->rfe_sme=$request['rfeSME'];
@@ -37,10 +29,10 @@ class AuditController extends Controller
         $audit->audit_status='PLAN';
         $audit->save();
 
-
-        $formInput=json_encode($arrInput,JSON_PRETTY_PRINT);
-        return view('alerts.success')->with(['title'=>$title,'formInput'=>$formInput,'alertReRoute'=>'/index']);
+        $auditData=$audit;
+        return view('alerts.create.success')->with(['title'=>$title,'auditData'=>$auditData,'alertReRoute'=>'/index']);
     }
+
     public function load($title='vAudit',$alert=NULL,Request $request)
     {
         $audit = new Audit();
@@ -48,12 +40,14 @@ class AuditController extends Controller
         $auditData = Audit::where('id','=',$auditID)->get()->toArray();
         return view('dashboard')->with(['title'=>$title,'auditData'=>$auditData[0]]);
     }
-    public function update($title='vAudit',$alert=NULL,Request $request)
-    {
 
-    }
+
     public function delete($title='vAudit',$alert=NULL,Request $request)
     {
-
+        $audit = new Audit();
+        $auditID=$request['auditID'];
+        $auditName=Audit::select('name')->where('id','=',$auditID)->first();
+        $result = Audit::where('id','=',$auditID)->delete();
+        return view('alerts.delete.success')->with(['title'=>$title,'result'=>$result,'auditID'=>$auditID,'auditName'=>$auditName->name,'alertReRoute'=>'/index']);
     }
 }

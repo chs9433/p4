@@ -2,17 +2,17 @@
 @section('viewName')
 <div class="nav-scroller bg-white shadow-sm">
   <nav class="nav nav-underline">
-    <a class="nav-link active" href="#"><strong>New Audit Project</strong></a>
+    <a class="nav-link active" href="#"><strong>Update Audit Project</strong></a>
   </nav>
 </div>
 @endsection
 @section('content')
 <div class="container-fluid" style="margin:auto;">
 <br>
-<h4>New Audit Project</h4>
-<small>Fill in all fields and click the 'Create' button.</small>
+<h4>Update Audit Project</h4>
+<small>Update all fields and click the 'Update' button.</small>
 <hr>
-<form class="form-signin" id="formLogin" name="formLogin" method="POST" action="{{ url('/process/form/create/audit') }}">
+<form class="form-signin" id="formLogin" name="formLogin" method="POST" action="{{ url('/process/form/update/audit') }}">
 {{ csrf_field() }}
 <div class="form-group">
 <label class="form-label va-form-label" for="submarket">Submarket<sup class="va-info-icon"><i class="fas fa-info-circle"></i></sup></label>
@@ -74,7 +74,7 @@
 
 <div class="form-row">
 <button class="btn btn-large btn-info mr-3 va-form-button" type="reset">Reset</button>
-<button class="btn btn-large btn-success mr-3 va-form-button" type="submit">Create</button>
+<button class="btn btn-large btn-success mr-3 va-form-button" type="submit">Update</button>
 </div>
 
 </form>

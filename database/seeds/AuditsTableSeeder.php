@@ -25,6 +25,7 @@ class AuditsTableSeeder extends Seeder
             $audit = new Audit();
             $audit->created_at = Carbon\Carbon::now()->subDays($count)->toDateTimeString();
             $audit->updated_at = Carbon\Carbon::now()->subDays($count)->toDateTimeString();
+            $audit->name='AUDIT-'.strtoupper($auditData[1]).'-'.$auditData[2];
             $audit->market = strtoupper($auditData[0]);
             $audit->submarket = strtoupper($auditData[1]);
             $audit->audit_start_date = $auditData[2];
