@@ -10,7 +10,6 @@
     <link href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" rel="stylesheet">
     <link href='/css/floating-labels.css' rel='stylesheet'>
   </head>
-
   <body>
      <div class="container-fluid">
     <form class="form-signin" id="formLogin" name="formLogin" method="POST" action="{{ url('/login') }}">
