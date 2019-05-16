@@ -10,41 +10,19 @@
 + Bootstrap Floating Labels (CSS): <https://getbootstrap.com/docs/4.0/examples/floating-labels/floating-labels.css>
 
 ## Feature summary
-+ Visitors can register/log in
-+ Users can add/read/delete audits
-+ Each audit has a dashboard page which presents a short overview of the audit
++ Users can add/load(read)/delete audits
++ Each loaded audit has a dashboard page which presents a short overview of the audit information created by the end-user
 
 ## Database summary
-+ My application has 4 tables in total (`users`, `audits`, `locations`,`sites`)
-+ There's a many-to-many relationship between `sites` and `audits`
-+ There's a one-to-many relationship between `locations` and `sites`
++ My application has 3 tables in total (`audits`, `locations`,`sites`)
++ There's a one-to-many relationship between `locations` and `audits`
 
 ## Packages
 +   barryvdh/laravel-debugbar
-+   phpoffice/phpword
-+   phpoffice/phpspreadsheet
-+   phpoffice/phpvisio
-+   phpoffice/phppresentation
-+   phpoffice/phpproject
-+   phpoffice/common
-+   adldap2/adldap2-laravel
-+   dompdf/dompdf
-+   fullcalendar/fullcalendar
-+   consoletvs/charts
-+   mobiledetect/mobiledetectlib
-+   composer require twbs/bootstrap
-+   nolimits4web/swiper
-+   jeroendesloovere/vcard
-+   nicat/static-map
-+   softon/sweetalert
-+   datatables/datatables
-+   barryvdh/laravel-dompdf
-+   adldap2/adldap2-laravel
-+   geocoder-php/mapquest-provider
-+   toin0u/geotools-laravel
 
 ## Code style divergences
 None
 
 ## Notes for instructor
-None
++ Site data is seeded for the 'Tri State' submarket only. If you create and/or load audits for other markets then the 'Site List' section of the dashboard will be empty.
++ There are multiple unused views, tables/migrations, seeders, models, routes and controllers that you should disregard. Those were added as placeholders for my deliverable for work.
