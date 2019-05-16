@@ -15,26 +15,24 @@ class AuditController extends Controller
     {
         # Data Validation Rules
         $validationRules=([
-        'market' => 'required|string',
-        'submarket' => 'required|string',
+        'submarket' => 'required',
         'audit_start_date' => 'required',
         'audit_end_date' => 'required',
-        'lead_auditor' => 'required|string',
-        'guest_auditor' => 'required|string',
-        'rfe_sme' => 'required|string',
-        'ehs_sme' => 'required|string'
+        'lead_auditor' => 'required',
+        'guest_auditor' => 'required',
+        'rfe_sme' => 'required',
+        'ehs_sme' => 'required'
         ]);
 
         #Error Messages
         $errorMessages=([
-        'market.required' => 'The \'Market\' field is required.',
         'submarket.required' => 'The \'Submarket\' field is required.',
         'audit_start_date.required' => 'The \'Audit Start Date\' field is required.',
         'audit_end_date.required' => 'The \'Audit End Date\' field is required.',
         'lead_auditor.required' => 'The \'Lead Auditor\' field is required.',
         'guest_auditor.required' => 'The \'Guest Auditor\' field is required.',
         'rfe_sme.required' => 'The \'RFE SME\' field is required.',
-        'ehs_sme.reequired' => 'The \'EHS SME\' field is required.',
+        'ehs_sme.reequired' => 'The \'EHS SME\' field is required.'
         ]);
 
 
@@ -100,7 +98,7 @@ class AuditController extends Controller
 
         # Make the call to validate inputs
         $request->validate($validationRules,$errorMessages);
-        
+
         #Deletes Audit
         $audit = new Audit();
         $auditID=$request['auditID'];

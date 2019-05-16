@@ -14,6 +14,15 @@
     <h4>Delete Audit</h4>
     <small>Select the desired audit and press the 'Delete' button.</small>
     <hr>
+    @if ($errors->any())
+    <div class="alert alert-danger">
+        <ul>
+            @foreach ($errors->all() as $error)
+                <li>{{ $error }}</li>
+            @endforeach
+        </ul>
+    </div>
+    @endif
     <form class="form-signin" id="formLogin" name="formLogin" method="POST" action="{{ url('/process/form/delete/audit') }}">
         {{ csrf_field() }}
         <div class="form-group">

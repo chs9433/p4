@@ -14,6 +14,15 @@
     <h4>New Audit Project</h4>
     <small>Fill in all fields and click the 'Create' button.</small>
     <hr>
+    @if ($errors->any())
+    <div class="alert alert-danger">
+        <ul>
+            @foreach ($errors->all() as $error)
+                <li>{{ $error }}</li>
+            @endforeach
+        </ul>
+    </div>
+    @endif
     <form class="form-signin" id="formLogin" name="formLogin" method="POST" action="{{ url('/process/form/create/audit') }}">
         {{ csrf_field() }}
         <div class="form-group">
