@@ -56,7 +56,7 @@
         <div class="row text-center" style="vertical-align:middle;width:100%;padding:0px;margin:auto;border-top:1px solid white;border-bottom:1px solid white;color:white;bottom:5%;position:fixed;">
             <div class="col-sm-12 col-md-12" style="vertical-align:middle;">
                 <form method="GET" action="/index">
-                    <button class="btn btn-danger btn-block" type="submit">Let's Go</button>
+                    <button class="btn btn-danger btn-block" type="submit">Start</button>
                 </form>
             </div>
         </div>

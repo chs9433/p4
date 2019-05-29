@@ -1,7 +1,7 @@
-# Project 4
+# vAudit
 + By: Christopher Sheppard
-+ Production URL: <http://p4.sheppify.me>
-+ Local URL: <http://p4.loc>
++ Production URL: <https://regops.vzwnet.com/vaudit>
++ Local URL: <http://p4.hqnos.loc>
 
 ## Outside resources
 + Bootstrap 4.3.1 (CSS): <https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css>
@@ -20,9 +20,6 @@
 ## Packages
 +   barryvdh/laravel-debugbar
 
-## Code style divergences
-+ The 'Welcome' view contains in-line stylings. I created a separate CSS file with classes to style the elements, but for some reason the linked styles were not reflected in this view only. All other views have classes from the same CSS file (per requirements).
-
-## Notes for instructor
+## Notes End-User
 + Site data is seeded for the 'Tri State' submarket only. If you create and/or load audits for other markets then the 'Site List' section of the dashboard will be empty.
 + There are multiple unused views, tables/migrations, seeders, models, routes and controllers that you should disregard. Those were added as placeholders for my deliverable for work.
